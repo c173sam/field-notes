@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">IT 支持现场流程图</title>
+  <desc id="desc">从用户问题、现场排查、跨团队协作到知识库沉淀的流程。</desc>
+  <defs>
+    <linearGradient id="panel" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#17324a"/>
+      <stop offset="1" stop-color="#0f222d"/>
+    </linearGradient>
+    <style>
+      .panel{fill:url(#panel)}
+      .line{fill:none;stroke:#74b8d9;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+      .node{fill:#f9fbfd;stroke:#18354d;stroke-width:3}
+      .accent{fill:#f3b14b}
+      .green{fill:#4fb585}
+      .text{font:700 22px 'Microsoft YaHei',Arial,sans-serif;fill:#142436}
+      .small{font:500 16px 'Microsoft YaHei',Arial,sans-serif;fill:#496072}
+      .code{font:600 15px Consolas,monospace;fill:#dcebf2}
+    </style>
+  </defs>
+  <rect class="panel" x="0" y="0" width="760" height="520" rx="22"/>
+  <path class="line" d="M130 130 H330 Q380 130 380 180 V246 Q380 296 430 296 H628"/>
+  <path class="line" d="M382 246 H228 Q178 246 178 296 V386"/>
+  <circle class="node" cx="130" cy="130" r="62"/>
+  <circle class="node" cx="380" cy="246" r="72"/>
+  <circle class="node" cx="628" cy="296" r="62"/>
+  <circle class="node" cx="178" cy="386" r="62"/>
+  <circle class="accent" cx="130" cy="130" r="13"/>
+  <circle class="green" cx="380" cy="246" r="15"/>
+  <circle class="accent" cx="628" cy="296" r="13"/>
+  <circle class="green" cx="178" cy="386" r="13"/>
+  <text class="text" x="92" y="104">用户问题</text>
+  <text class="small" x="82" y="160">PDA / 网络 / 终端</text>
+  <text class="text" x="328" y="222">现场排查</text>
+  <text class="small" x="318" y="265">定位 / 记录 / 复测</text>
+  <text class="text" x="587" y="282">协作闭环</text>
+  <text class="small" x="572" y="334">IT / 业务 / 供应商</text>
+  <text class="text" x="134" y="374">知识库</text>
+  <text class="small" x="110" y="426">Runbook / 复盘</text>
+  <rect x="48" y="32" width="664" height="52" rx="12" fill="#102331" stroke="#2c536d"/>
+  <text class="code" x="72" y="65">support_chain: collect -> diagnose -> coordinate -> document</text>
+  <rect x="500" y="410" width="188" height="54" rx="10" fill="#f9fbfd"/>
+  <text class="small" x="526" y="443">Portfolio Evidence</text>
+</svg>
