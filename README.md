@@ -65,6 +65,25 @@ public/
 public/avatar.jpg
 ```
 
+## 页面结构
+
+主要组件位于：
+
+```text
+src/components/
+```
+
+- `AnimatedBackdrop.tsx`：背景网格、扫描光、红橙光场和鼠标视差。
+- `Header.tsx`：顶部胶囊导航和当前区块高亮。
+- `Hero.tsx`：首屏能量核心、主标题、悬浮信息卡和 CTA。
+- `Experience.tsx`：横向经历卡与点击展开详情。
+- `Projects.tsx`：项目海报卡片。
+- `Skills.tsx`：能力地图与 Career Focus。
+- `Contact.tsx`：联系方式。
+- `Footer.tsx`：页脚。
+
+视觉重点参考视频中的暗黑红橙科技作品集，但个人信息、项目、联系方式和表达均已替换为徐念齐 / Sam 的求职信息。
+
 ## 部署
 
 ### Vercel / Netlify
