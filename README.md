@@ -1,15 +1,6 @@
-# 徐念齐 Sam 个人作品集
+# Sam Premium Portfolio
 
-一个面向外企实习投递的个人作品集网站，视觉参考来自用户提供的视频：深色技术感界面、红橙强调色、胶囊导航、长条经历卡片、点击展开详情和克制滚动动效。页面内容已全部替换为徐念齐 / Sam 的真实求职信息，不包含参考视频原作者的姓名、头像、联系方式、项目或独特文案。
-
-## 技术栈
-
-- Vite
-- React
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Lucide React
+高级暗黑动态个人作品集网页，面向外企实习投递场景。技术栈为 Next.js、TypeScript、Tailwind CSS 和 Framer Motion。
 
 ## 本地运行
 
@@ -18,103 +9,41 @@ npm install
 npm run dev
 ```
 
-默认地址通常为：
-
-```text
-http://127.0.0.1:5173/
-```
+打开 `http://localhost:3000`。
 
 ## 构建检查
 
 ```bash
-npm run lint
+npm run typecheck
 npm run build
-```
-
-构建产物会输出到：
-
-```text
-dist/
-```
-
-如果部署到当前 GitHub Pages 项目站 `c173sam/field-notes`，请使用：
-
-```powershell
-$env:VITE_BASE='/field-notes/'; npm run build
 ```
 
 ## 修改个人信息
 
-所有静态内容集中在：
+所有静态个人信息集中在：
 
 ```text
-src/data/profile.ts
+data/profile.ts
 ```
 
-可在这里修改姓名、求职方向、联系方式、经历、项目、技能和 Career Focus。
-
-头像或个人视觉素材放在：
-
-```text
-public/
-```
-
-当前使用的图片文件为：
-
-```text
-public/avatar.jpg
-```
-
-## 页面结构
-
-主要组件位于：
-
-```text
-src/components/
-```
-
-- `AnimatedBackdrop.tsx`：背景网格、扫描光、红橙光场和鼠标视差。
-- `Header.tsx`：顶部胶囊导航和当前区块高亮。
-- `Hero.tsx`：首屏能量核心、主标题、悬浮信息卡和 CTA。
-- `Experience.tsx`：横向经历卡与点击展开详情。
-- `Projects.tsx`：项目海报卡片。
-- `Skills.tsx`：能力地图与 Career Focus。
-- `Contact.tsx`：联系方式。
-- `Footer.tsx`：页脚。
-
-视觉重点参考视频中的暗黑红橙科技作品集，但个人信息、项目、联系方式和表达均已替换为徐念齐 / Sam 的求职信息。
+可修改姓名、学校、专业、毕业时间、求职方向、技能、职业路线和联系方式。
 
 ## 部署
 
-### Vercel / Netlify
+推荐部署到 Vercel：
 
-1. 推送仓库到 GitHub。
-2. 在 Vercel 或 Netlify 中导入项目。
-3. Build command 使用：
+1. 将项目推送到 GitHub。
+2. 在 Vercel 导入仓库。
+3. Framework 选择 Next.js。
+4. 使用默认构建命令 `npm run build`。
 
-```bash
-npm run build
-```
+也可部署到支持 Next.js 的平台，例如 Netlify、Cloudflare Pages 或自有服务器。
 
-4. Publish directory 使用：
+## 设计说明
 
-```text
-dist
-```
-
-### GitHub Pages
-
-先执行：
-
-```bash
-npm run build
-```
-
-再将 `dist/` 目录内容发布到 GitHub Pages 对应分支或仓库。
-
-## 内容原则
-
-- 不虚构经历、公司、学校、证书或成果。
-- 已实践能力和学习中能力分开表达。
-- 求职定位聚焦 Technical Support、IT Support、PMO、Project Intern、Solution Intern 与 FDE 方向探索。
-- 文案保持克制、可信、适合 HR 和技术面试官快速阅读。
+- 暗黑高级背景：aurora gradient、subtle grid、soft radial glow、noise texture。
+- Hero 首屏：大字号姓名、动态入场、求职定位、glow/border beam 按钮。
+- 信息卡片：玻璃拟态、soft border、hover lift、轻微 3D tilt。
+- 技能区：Bento Grid 展示通信、网络、技术支持、项目协作、文档、Office / Excel、Git / Linux、AI 应用落地探索。
+- 职业路线：Technical Support、IT Support / Helpdesk、PMO / Project Intern、Solution / Delivery、FDE 方向探索。
+- 移动端：降低布局复杂度，保持阅读清晰，并支持 reduced motion。
